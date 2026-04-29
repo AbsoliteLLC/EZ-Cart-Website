@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZ Cart</title>
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #0f172a;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .hero h2 {
+            font-size: 1.25rem;
+            color: #475569;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .beta-tag {
+            display: inline-block;
+            background-color: #e2e8f0;
+            color: #475569;
+            font-size: 0.85rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        /* Content Sections */
+        section {
+            padding: 50px 0;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            color: #0f172a;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        /* Grid for 'How it Works' */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card h4 {
+            font-size: 1.1rem;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Privacy Section */
+        .privacy-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 25px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 20px;
+        }
+
+        .privacy-box h3 {
+            color: #166534;
+        }
+
+        /* Buttons & Footer */
+        .cta-container {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            margin: 10px;
+        }
+
+        .btn-primary {
+            background-color: #3b82f6;
+            color: white;
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f8fafc;
+            border-color: #94a3b8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.25rem; }
+            .hero h2 { font-size: 1.1rem; }
+            .btn { display: block; width: 100%; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>🌐 EZ Cart</h1>
+            <h2>Your On-Demand, Cross-Platform Shopping List.</h2>
+            <p>The easiest way to track prices across the entire internet without giving up your data.</p>
+            <span class="beta-tag">Currently in Beta - Coming Soon to Chrome Web Store</span>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section>
+            <h3>🛒 What is EZ Cart?</h3>
+            <p>Have you ever wanted to watch the price of an iPad on Best Buy, a monitor on Amazon, and a jacket on Walmart, all in one place?</p>
+            <p>EZ Cart is a lightweight Chrome Extension that acts as your personal, automated shopping list. Instead of keeping 20 tabs open, simply save the item to your tracker. Whenever you open the extension, it instantly fetches the live, real-time prices for every item on your list.</p>
+        </section>
+
+        <section>
+            <h3>⚙️ How It Works</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>1. Save Anything</h4>
+                    <p>Browsing a store? Click "Add to Tracker" to save the product URL and its current price.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>2. On-Demand Refresh</h4>
+                    <p>Open the extension anytime to trigger a live price check. Watch your list update with the newest prices in milliseconds.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>3. Zero-Cloud Privacy</h4>
+                    <p>Your list lives purely in your browser's local storage. No servers, no tracking your browsing history, and no account required.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>4. Buy When Ready</h4>
+                    <p>See a price drop? Click the <strong>"Buy Now"</strong> button to be taken directly to the retailer's checkout page.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="privacy-box">
+                <h3>🔒 Privacy First</h3>
+                <p>Unlike other trackers that monitor every website you visit, EZ Cart only activates when you physically click the extension icon. Your data stays on your hard drive, exactly where it belongs.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="cta-container">
+        <div class="container">
+            <a href="#" class="btn btn-primary" onclick="event.preventDefault();">Download Extension (Coming Soon)</a>
+            <a href="mailto:absolitellc@gmail.com" class="btn btn-secondary">Contact Developer</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EZ Cart. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
