@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZ Cart</title>
+    <title>EZ Cart | Universal Price Tracker</title>
     <style>
         /* Base Styles & Reset */
         * {
@@ -25,12 +25,28 @@
             padding: 0 20px;
         }
 
-        /* Hero Section */
+        /* Header / Hero Section */
         .hero {
             text-align: center;
             padding: 80px 20px 60px;
             background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
             border-bottom: 1px solid #e2e8f0;
+        }
+
+        .logo-box {
+            background-color: #f97316;
+            color: white;
+            font-weight: 800;
+            font-size: 32px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
+            letter-spacing: -1px;
         }
 
         .hero h1 {
@@ -108,14 +124,14 @@
         /* Privacy Section */
         .privacy-box {
             background-color: #f0fdf4;
-            border-left: 4px solid #22c55e;
+            border-left: 4px solid #10b981;
             padding: 25px;
             border-radius: 0 12px 12px 0;
             margin-top: 20px;
         }
 
         .privacy-box h3 {
-            color: #166534;
+            color: #065f46;
         }
 
         /* Buttons & Footer */
@@ -138,10 +154,13 @@
         }
 
         .btn-primary {
-            background-color: #3b82f6;
+            background-color: #f97316;
             color: white;
-            opacity: 0.7;
-            cursor: not-allowed;
+            box-shadow: 0 4px 6px rgba(249, 115, 22, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: #ea580c;
         }
 
         .btn-secondary {
@@ -162,7 +181,6 @@
             font-size: 0.9rem;
         }
 
-        /* Responsive */
         @media (max-width: 600px) {
             .hero h1 { font-size: 2.25rem; }
             .hero h2 { font-size: 1.1rem; }
@@ -174,10 +192,11 @@
 
     <header class="hero">
         <div class="container">
-            <h1>🌐 EZ Cart</h1>
+            <div class="logo-box">EZ</div>
+            <h1>EZ Cart</h1>
             <h2>Your On-Demand, Cross-Platform Shopping List.</h2>
-            <p>The easiest way to track prices across the entire internet without giving up your data.</p>
-            <span class="beta-tag">Currently in Beta - Coming Soon to Chrome Web Store</span>
+            <p>Track products and prices across the entire internet without giving up your data.</p>
+            <span class="beta-tag">Currently Under Review by Google Chrome Web Store</span>
         </div>
     </header>
 
@@ -185,24 +204,24 @@
         
         <section>
             <h3>🛒 What is EZ Cart?</h3>
-            <p>Have you ever wanted to watch the price of an iPad on Best Buy, a monitor on Amazon, and a jacket on Walmart, all in one place?</p>
-            <p>EZ Cart is a lightweight Chrome Extension that acts as your personal, automated shopping list. Instead of keeping 20 tabs open, simply save the item to your tracker. Whenever you open the extension, it instantly fetches the live, real-time prices for every item on your list.</p>
+            <p>Have you ever wanted to watch the price of an iPad, a monitor, and a jacket from different websites all in one centralized place?</p>
+            <p>EZ Cart is a lightweight, on-demand Chrome Extension that acts as your personal, automated shopping list. Instead of keeping 20 tabs open or creating accounts on multiple price-tracking websites, simply save items directly to your browser. Whenever you open the extension, it instantly fetches the live, real-time prices for every item on your list.</p>
         </section>
 
         <section>
-            <h3>⚙️ How It Works</h3>
+            <h3>⚙️ Key Features</h3>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h4>1. Save Anything</h4>
-                    <p>Browsing a store? Click "Add to Tracker" to save the product and its current price.</p>
+                    <h4>1. Save Anything, Anywhere</h4>
+                    <p>Browsing a store? Click "+ Add Current Item" to instantly save the product, its title, its image, and its current price.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>2. On-Demand Refresh</h4>
-                    <p>Open the extension anytime to trigger a live price check. Watch your list update with the newest prices in milliseconds.</p>
+                    <h4>2. On-Demand Price Refresh</h4>
+                    <p>Open the extension anytime and click "Update" to trigger a live price check. Watch your list update with the newest prices in milliseconds.</p>
                 </div>
                 <div class="feature-card">
-                    <h4>3. Zero-Cloud Privacy</h4>
-                    <p>Your list lives purely in your browser's local storage. No servers, no tracking your browsing history, and no account required.</p>
+                    <h4>3. Beautiful Dark Mode</h4>
+                    <p>Enjoy a sleek, modern interface with a built-in Dark Mode that perfectly organizes your items into clean product cards.</p>
                 </div>
                 <div class="feature-card">
                     <h4>4. Buy When Ready</h4>
@@ -213,8 +232,8 @@
 
         <section>
             <div class="privacy-box">
-                <h3>🔒 Privacy First</h3>
-                <p>Unlike other trackers that monitor every website you visit, EZ Cart only activates when you physically click the extension icon. Your data stays on your hard drive, exactly where it belongs.</p>
+                <h3>🔒 Privacy First: Zero-Cloud Tracking</h3>
+                <p>We believe your shopping habits are your business. Unlike other trackers that monitor every website you visit, EZ Cart only activates when you physically click the extension icon. We do not require a login, we do not sync your data to the cloud, and we do not track your background web activity. Your data stays on your hard drive.</p>
             </div>
         </section>
 
@@ -222,14 +241,3 @@
 
     <div class="cta-container">
         <div class="container">
-            <a href="#" class="btn btn-primary" onclick="event.preventDefault();">Download Extension (Coming Soon)</a>
-            <a href="mailto:absolitellc@gmail.com" class="btn btn-secondary">Contact Developer</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 EZ Cart. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
